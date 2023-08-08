@@ -17,12 +17,11 @@ export default function Login() {
     draggable: true,
     theme: "dark",
   };
-  useEffect(() => { 
+  useEffect(() => {
     if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
-      navigate("/"); 
+      navigate("/");
     }// eslint-disable-next-line
   }, []);
-
 
   const handleChange = (event) => {
     setValues({ ...values, [event.target.name]: event.target.value });

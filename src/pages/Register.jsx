@@ -26,7 +26,7 @@ export default function Register() {
   useEffect(() => {
     if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
       navigate("/");
-    }
+    }// eslint-disable-next-line
   }, []);
 
   const handleChange = (event) => {
